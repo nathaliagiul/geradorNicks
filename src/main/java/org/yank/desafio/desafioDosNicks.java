@@ -30,10 +30,12 @@ public class desafioDosNicks {
 		WebDriver driver = initializePhantomjsDriver();
 		WebDriver driver2 = initializePhantomjsDriver();
 		
+		System.out.println("Iniciando o processo de colheta dos dados. Aguarde um instante, por favor.");
 		gerarNick(driver);
+		System.out.println("Nicks gerados com sucesso. Aguarde enquanto geramos o CPF.");
 		gerarCPF(driver, driver2);
-		
-		System.out.println("Finalizado!");
+		System.out.println("CPFs gerados com sucesso. Por favor, verifique a lista apresentada no diretório:"
+				+ " resources/result/result.txt");
 	}
 	
 	/**
