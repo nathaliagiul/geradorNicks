@@ -30,17 +30,17 @@ public class desafioDosNicks {
 		WebDriver driver = initializePhantomjsDriver();
 		WebDriver driver2 = initializePhantomjsDriver();
 		
-		System.out.println("Iniciando o processo de colheta dos dados. Aguarde um instante, por favor.");
+		System.out.println("Iniciando o processo de coleta dos dados. Aguarde um instante, por favor.");
 		gerarNick(driver);
 		System.out.println("Nicks gerados com sucesso. Aguarde enquanto geramos o CPF.");
 		gerarCPF(driver, driver2);
-		System.out.println("CPFs gerados com sucesso. Por favor, verifique a lista apresentada no diretÛrio:"
+		System.out.println("CPFs gerados com sucesso. Por favor, verifique a lista apresentada no diret√≥rio:"
 				+ " resources/result/result.txt");
 	}
 	
 	/**
-	 * MÈtodo respons·vel por inicializar um Driver PhantomJS (sem interface
-	 * gr·fica) 
+	 * M√©todo respons√°vel por inicializar um Driver PhantomJS (sem interface
+	 * gr√°fica) 
 	 * 
 	 */
 	public static WebDriver initializePhantomjsDriver() {
@@ -49,13 +49,13 @@ public class desafioDosNicks {
 	}
 	
 	/**
-	 * MÈtodo respons·vel por gerar os nicks aleatÛriamente.
+	 * M√©todo respons√°vel por gerar os nicks aleat√≥riamente.
 	 * 
 	 * Passos:
 	 * 1 - Acessar o gerador de nicks
-	 * 2 - Selecionar o tipo do mÈtodo aleatÛrio
+	 * 2 - Selecionar o tipo do m√©todo aleat√≥rio
 	 * 3 - Setar a quantidade de nicks gerados
-	 * 4 - Setar o n˙mero de caracteres de cada Nick
+	 * 4 - Setar o n√∫mero de caracteres de cada Nick
 	 * 5 - Clicar em gerar nick
 	 * 
 	 */
@@ -70,14 +70,14 @@ public class desafioDosNicks {
 	}
 	
 	/**
-	 * MÈtodo respons·vel por gerar os cpfs aleatoriamente e gravar em um arquivo os nicks e cpfs concatenados
+	 * M√©todo respons√°vel por gerar os cpfs aleatoriamente e gravar em um arquivo os nicks e cpfs concatenados
 	 * 
 	 * Passos:
 	 * 1 - Capturar nicks gerados
 	 * 2 - Criar o arquivo
 	 * 3 - Acessar o gerador de CPFs
 	 * 4 - Clicar em gerar CPF
-	 * 5 - Aguardar a presenÁa do CPF apÛs o estado "Gerando..."
+	 * 5 - Aguardar a presen√ßa do CPF ap√≥s o estado "Gerando..."
 	 * 6 - Capturar CPF
 	 * 7 - Escrever no arquivo os dados
 	 * 
